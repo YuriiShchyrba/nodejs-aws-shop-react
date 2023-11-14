@@ -11,7 +11,11 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
-    "prettier": "prettier src --write"
+    "prettier": "prettier src --write",
+    "bootstrap": "cdk bootstrap --profile default",
+    "deploy": "cdk deploy --profile default --require-approval=never",
+    "destroy": "cdk destroy",
+    "all": "npm run build && npm run bootstrap && npm run deploy"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "^1.204.0",
@@ -39,6 +43,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.1",
+    "@types/node": "^20.9.0",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
