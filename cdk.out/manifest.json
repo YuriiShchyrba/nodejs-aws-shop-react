@@ -1,0 +1,506 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MyStaticSite": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyStaticSite.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/MyStaticSite": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5.zip",
+              "id": "1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5",
+              "packaging": "file",
+              "sourceHash": "1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5",
+              "s3BucketParameter": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5S3BucketA4E7C173",
+              "s3KeyParameter": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5S3VersionKey35F67D7E",
+              "artifactHashParameter": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5ArtifactHashF0E84BB2"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new LayerVersion (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:194:29)",
+              "new AwsCliLayer (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:304:16)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "id": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "packaging": "zip",
+              "sourceHash": "f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da",
+              "s3BucketParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+              "s3KeyParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+              "artifactHashParameter": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531",
+              "id": "d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531",
+              "packaging": "zip",
+              "sourceHash": "d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531",
+              "s3BucketParameter": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531S3Bucket85B9EB85",
+              "s3KeyParameter": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531S3VersionKeyAE85A617",
+              "artifactHashParameter": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531ArtifactHash147604AC"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "Object.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:108:23)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:51)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCC-OAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCOAIA9FA0925",
+            "trace": [
+              "new OriginAccessIdentity (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:13:27)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCCStaticBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCStaticBucket1C589BA4",
+            "trace": [
+              "new Bucket (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:15:24)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCCStaticBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCStaticBucketPolicy2333DB45",
+            "trace": [
+              "new BucketPolicy (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:53:21)",
+              "Bucket.addToResourcePolicy (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:605:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:21:16)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCC-distribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCdistributionCFDistribution31DB0E7D",
+            "trace": [
+              "new CloudFrontWebDistribution (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-cloudfront/lib/web-distribution.ts:980:26)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:27:26)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCC-Bucket-Deployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCBucketDeploymentAwsCliLayer91B4300C",
+            "trace": [
+              "new LayerVersion (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:202:39)",
+              "new AwsCliLayer (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:304:16)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/MyStaticSite/JSCC-Bucket-Deployment/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyStaticSiteJSCCBucketDeploymentCustomResourceB1E8BCED",
+            "trace": [
+              "new CustomResource (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/custom-resource.ts:133:21)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:346:15)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5S3BucketA4E7C173",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new LayerVersion (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:194:29)",
+              "new AwsCliLayer (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:304:16)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5S3VersionKey35F67D7E",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new LayerVersion (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:194:29)",
+              "new AwsCliLayer (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:304:16)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1da15adb9ba73812c695f9922eb752050e0a392eba0a120d36d64bfce7cf8dc5ArtifactHashF0E84BB2",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new LayerVersion (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:194:29)",
+              "new AwsCliLayer (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:304:16)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3BucketF23C0DE7",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daS3VersionKey5E97B17D",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/f98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711da/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf98b78092dcdd31f5e6d47489beb5f804d4835ef86a8085d0a2053cb9ae711daArtifactHashD85D28D8",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531S3Bucket85B9EB85",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "Object.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:108:23)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:51)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531S3VersionKeyAE85A617",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "Object.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:108:23)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:51)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/AssetParameters/d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersd7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531ArtifactHash147604AC",
+            "trace": [
+              "new FileAssetParameters (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "MyStaticStack.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "Object.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:108:23)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:51)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:688:31)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Import.grant (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Import.grantRead (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:729:17)",
+              "Asset.grantRead (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:212:17)",
+              "Object.bind (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:115:15)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:327:51)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/function.ts:771:35)",
+              "SingletonFunction.ensureLambda (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:187:12)",
+              "new SingletonFunction (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:67:32)",
+              "new BucketDeployment (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:301:21)",
+              "new StaticSite (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/src/cdk/lib/cdk-stack.ts:38:5)",
+              "new MyStaticStack (file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:9:5)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:14:1",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:16:5",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ],
+        "/MyStaticSite/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "file:///Users/yurashchyrba/GitHub/CLOUD/nodejs-aws-shop-react/cdk.ts:16:5",
+              "ModuleJob.run (node:internal/modules/esm/module_job:194:25)"
+            ]
+          }
+        ]
+      },
+      "displayName": "MyStaticSite"
+    }
+  }
+}
